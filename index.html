@@ -27,21 +27,41 @@
         <nav class="white">
             <div class="container">
                 <img class="brand-logo" src="img/logo.png" alt="logo" width="150px">
+                <a href="#sidenav" class="sidenav-trigger">
+                    <i class="material-icons orange-text text-darken-4">menu</i>
+                </a>
                 <ul class="right hide-on-med-and-down">
                     <li>
-                    <a href="" class="orange-text text-darken-4">Home</a>
+                    <a href="#hello" class="orange-text text-darken-4">Home</a>
                     </li>2
                     <li>    
-                    <a href="" class="orange-text text-darken-4">Cakes</a>
+                    <a href="#cakes" class="orange-text text-darken-4">Cakes</a>
                     </li>    
                     <li>
-                    <a href="" class="orange-text text-darken-4">Soups</a>
+                    <a href="#soups" class="orange-text text-darken-4">Soups</a>
                     </li>
                     <li>    
-                    <a href="" class="orange-text text-darken-4">Chicken</a>
+                    <a href="#chicken" class="orange-text text-darken-4">Chicken</a>
                     </li>
                     <li>
                     <a href="" class="orange-text text-darken-4">Customers</a>
+                    </li>
+                </ul>
+                <ul class="sidenav orange darken-4 " id="sidenav">
+                    <li>
+                    <a href="#hello" class="white-text text-darken-4">Home</a>
+                    </li>
+                    <li>    
+                    <a href="#cakes" class="white-text text-darken-4">Cakes</a>
+                    </li>    
+                    <li>
+                    <a href="#soups" class="white-text text-darken-4">Soups</a>
+                    </li>
+                    <li>    
+                    <a href="#chicken" class="white-text text-darken-4">Chicken</a>
+                    </li>
+                    <li>
+                    <a href="" class="white-text text-darken-4">Customers</a>
                     </li>
                 </ul>
             </div>
@@ -69,7 +89,7 @@
     <main>
         <!-- introduction -->
          <div class="container">
-            <h1 class="orange-text text-darken-4">
+            <h1 class="orange-text text-darken-4" id="hello">
                 Hello there, foodies!
             </h1>
             <p class="flow-text">
@@ -136,7 +156,7 @@
         </div>    
 
         <section>
-            <div class="parallax-container">
+            <div class="parallax-container" id="cakes">
                 <div class="parallax">
                     <img class="responsive-img" src="img/cake.jpg" alt="cake">
                 </div>
@@ -308,12 +328,12 @@
         </div>
         </div>
         </div>
-          <div class="parallax-container">
+          <div class="parallax-container" id="soups">
             <div class="parallax">
                 <img class="responsive-img" src="img/soup.jpg" alt="soup">
             </div>
           </div>
-        <div class="container">
+        <div class="container" >
             <h1 class="orange-text text-darken-4">Soups</h1>
             <p class="flow-text">When you believe you will succeed. The first of the month is coming, we have to get money, we have no choice. It cost money to eat and they don't want to eat. Surround yourself with angels, positive energy, beautiful people, beautiful souls, and a clean heart.</p>
             <div class="row">
@@ -494,7 +514,7 @@
                 </div>
             </div>
         </div>
-        <div class="parallax-container">
+        <div class="parallax-container" id="chicken">
             <div class="parallax">
                 <img class="responsive-img" src="img/chicken.jpg" alt="chicken">
             </div>
@@ -757,6 +777,7 @@
             $('.collapsible').collapsible();
            $('.slider').slider({height:500});
            $('.parallax').parallax();
+           $('.sidenav').sidenav();
         })
      </script>
 </body>
